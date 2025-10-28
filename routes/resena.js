@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Resena = require('../models/reseñas');
+const Resena = require('../models/resena');
 
 // GET - Obtener todas las reseñas
 router.get('/', async (req, res) => {

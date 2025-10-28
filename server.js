@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Rutas
 app.use('/api/juegos', require('./routes/juegos'));
-app.use('/api/resenas', require('./routes/reseñas'));
+app.use('/api/resena', require('./routes/resena'));
 
 // Ruta de prueba
 app.get('/', (req, res) => {
