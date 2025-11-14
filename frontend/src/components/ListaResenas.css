@@ -1,0 +1,230 @@
+.resenas-container {
+  margin: 40px 0;
+  padding: 30px;
+  background: #000000;
+  border-radius: 10px;
+  border: 2px solid var(--neon-green);
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+}
+
+.resenas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.resenas-titulo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--neon-green);
+  text-shadow: 0 0 20px var(--neon-green);
+}
+
+.resenas-titulo .icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 0 15px var(--neon-green));
+}
+
+.btn-nueva-resena {
+  background: var(--neon-green);
+  color: #000000;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px var(--neon-green);
+  letter-spacing: 1px;
+}
+
+.btn-nueva-resena:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px var(--neon-green);
+}
+
+.loading-resenas {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.3rem;
+  color: var(--neon-green);
+}
+
+.sin-resenas {
+  text-align: center;
+  padding: 60px 40px;
+  background: rgba(0, 255, 65, 0.05);
+  border-radius: 10px;
+  border: 2px dashed var(--neon-green);
+}
+
+.sin-resenas .icon-big {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 20px var(--neon-green));
+}
+
+.sin-resenas p {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.btn-primera-resena {
+  background: var(--neon-green);
+  color: #000000;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px var(--neon-green);
+}
+
+.btn-primera-resena:hover {
+  box-shadow: 0 0 40px var(--neon-green);
+}
+
+.resenas-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.resena-card {
+  background: rgba(0, 255, 65, 0.05);
+  border: 2px solid var(--neon-green);
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resena-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px var(--neon-green);
+}
+
+.resena-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--neon-green);
+}
+
+.resena-info {
+  flex: 1;
+}
+
+.resena-titulo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--neon-green);
+  margin-bottom: 8px;
+}
+
+.resena-juego {
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.resena-calificacion {
+  font-size: 1.5rem;
+}
+
+.resena-calificacion .estrella-llena {
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+.resena-calificacion .estrella-vacia {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.resena-contenido {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  flex: 1;
+}
+
+.resena-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 2px solid var(--neon-green);
+}
+
+.resena-fecha {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+.resena-acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-editar-resena,
+.btn-eliminar-resena {
+  background: transparent;
+  border: 2px solid var(--neon-green);
+  color: var(--neon-green);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-editar-resena:hover {
+  background: var(--neon-green);
+  color: #000000;
+  box-shadow: 0 0 20px var(--neon-green);
+}
+
+.btn-eliminar-resena:hover {
+  background: var(--accent-red);
+  border-color: var(--accent-red);
+  color: #ffffff;
+  box-shadow: 0 0 20px var(--accent-red);
+}
+
+@media (max-width: 768px) {
+  .resenas-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .resenas-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .resenas-titulo {
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+}

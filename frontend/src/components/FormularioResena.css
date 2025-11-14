@@ -1,0 +1,39 @@
+.modal-resena {
+  background: #000000;
+  border: 2px solid var(--neon-green);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 50px var(--neon-green);
+  animation: slideUp 0.4s ease;
+}
+
+.formulario-resena {
+  padding: 30px;
+}
+
+.formulario-resena textarea {
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 255, 65, 0.05);
+  border: 2px solid rgba(0, 255, 65, 0.3);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  transition: all 0.3s ease;
+  resize: vertical;
+}
+
+.formulario-resena textarea:focus {
+  outline: none;
+  border-color: var(--neon-green);
+  background: rgba(0, 255, 65, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.formulario-resena textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
